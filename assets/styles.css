@@ -11,3 +11,52 @@ body {
     justify-content: flex-start;
     background-color: lightblue;
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    flex: 1 1 100%;
+}
+
+main aside {
+    flex: 1 1 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-center-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#score-container {
+    display: flex;
+}
+
+#score-container div {
+    flex: 1 1 50%;
+}
+
+@media screen and (min-width: 1180px) {
+    html * {
+        border-color: blue;
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    main section {
+        flex: 1 1 60%;
+    }
+    
+    main aside {
+        flex: 1 1 40%;
+    }
+}
